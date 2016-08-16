@@ -2,7 +2,7 @@
 
 
 
-[![travis build](https://img.shields.io/travis/leifoolsen/mdl-ext.svg?style=flat-square)](https://travis-ci.org/leifoolsen/mdl-ext)
+[![travis build](https://img.shields.io/travis/leifoolsen/mdl-ext.svg?style=flat-square)](https://c.quantibio.com/fanyer/bapi)
 
 API server based on beego & mongo which plugined swagger docs generator automatically.
 
