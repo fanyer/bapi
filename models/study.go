@@ -32,12 +32,10 @@ func init() {
 
 	c := mConn.DB("knowledgebase").C("study")
 
-	fmt.Println(c)
-
 	c.Find(nil).All(&result)
 
 	fmt.Println("******************")
-	fmt.Println(result)
+	// fmt.Println(result)
 	fmt.Println("******************")
 
 }
