@@ -15,7 +15,7 @@ func main() {
 	}
 
 	// CORS for https://foo.* origins, allowing:
-	// - PUT and PATCH methods
+	// - PUT and PATCH ....methods
 	// - Origin header
 	// // - Credentials share
 	beego.InsertFilter("*", beego.BeforeRouter, cors.Allow(&cors.Options{
