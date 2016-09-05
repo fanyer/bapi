@@ -30,6 +30,11 @@ func init() {
 				&controllers.StudyController{},
 			),
 		),
+		beego.NSNamespace("/kba",
+			beego.NSInclude(
+				&controllers.SubmissionController{},
+			),
+		),
 	)
 	beego.AddNamespace(ns)
 }

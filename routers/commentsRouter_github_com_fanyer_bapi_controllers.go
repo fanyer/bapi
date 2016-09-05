@@ -13,6 +13,13 @@ func init() {
 			[]string{"get"},
 			nil})
 
+	beego.GlobalControllerRouter["github.com/fanyer/bapi/controllers:SubmissionController"] = append(beego.GlobalControllerRouter["github.com/fanyer/bapi/controllers:SubmissionController"],
+		beego.ControllerComments{
+			"GetAll",
+			`/`,
+			[]string{"get"},
+			nil})
+
 	beego.GlobalControllerRouter["github.com/fanyer/bapi/controllers:UserController"] = append(beego.GlobalControllerRouter["github.com/fanyer/bapi/controllers:UserController"],
 		beego.ControllerComments{
 			"Post",

@@ -1,6 +1,8 @@
 package db
 
 import (
+	"fmt"
+
 	"github.com/astaxie/beego"
 	"gopkg.in/mgo.v2"
 )
@@ -21,6 +23,7 @@ func init() {
 	url := beego.AppConfig.String("mongodb::url")
 
 	sess, err := mgo.Dial(url)
+	fmt.Println("DB first")
 	if err != nil {
 		panic(err)
 	}

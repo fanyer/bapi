@@ -47,6 +47,6 @@ func init() {
 // 	return nil, errors.New("StudyId Not Exist")
 // }
 
-func GetAll() []Study {
+func GetAllStudy() []Study {
 	return result
 }

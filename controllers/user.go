@@ -1,8 +1,10 @@
 package controllers
 
 import (
-	"github.com/fanyer/bapi/models"
 	"encoding/json"
+	"fmt"
+
+	"github.com/fanyer/bapi/models"
 
 	"github.com/astaxie/beego"
 )
@@ -32,6 +34,8 @@ func (u *UserController) Post() {
 // @router / [get]
 func (u *UserController) GetAll() {
 	users := models.GetAllUsers()
+	fmt.Println("******************")
+
 	u.Data["json"] = users
 	u.ServeJSON()
 }
@@ -116,4 +120,3 @@ func (u *UserController) Logout() {
 	u.Data["json"] = "logout success"
 	u.ServeJSON()
 }
-

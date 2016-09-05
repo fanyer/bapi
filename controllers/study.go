@@ -36,7 +36,7 @@ type StudyController struct {
 // @Failure 403 :studyId is empty
 // @router / [get]
 func (o *StudyController) GetAll() {
-	obs := models.GetAll()
+	obs := models.GetAllStudy()
 	o.Data["json"] = obs
 	o.ServeJSON()
 }
